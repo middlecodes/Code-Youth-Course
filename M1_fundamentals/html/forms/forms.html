@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>My feedback form</legend>
+        <ul>
+        <li label for="name">Name:</label></li><input type="text" name="First Name" placeholder="First Name" size="30" id="name" required>
+        <br>
+        <label>Email:</label><li><input type="email" name="email" placeholder="example@123.com" size="" required></li>
+        <label>Password:</label><li><input type="password" name="password" placeholder="Password"></li>
+    <br>
+    <li><label>Tel:<label></label><input type="tel" name="mobile number" placeholder="416-555-5555" pattern="[0-9]{10}" required></li>
+    <b>
+        <br>
+    <li>Please check all the emotions that apply to you:</li>
+        <li><input type="checkbox" name="Angry" value="Angry">Angry</li>
+        <li><input type="checkbox" name="Sad" value="Sad">Sad</li>
+        <li><input type="checkbox" name="Happy" value="Happy">Happy</li>
+        <li><input type="checkbox" name="Ambivalent" value="Ambivalent">Ambivalent</li>
+        <br>
+        <li>How satisfied were you with your service?</li>
+        <li><input type="radio" name="Very Satisfied" value="Very Satisfied">Very Satisfied</li>
+        <li><input type="radio" name="Satisfied" value="Satisfied">Satisfied</li>
+        <li><input type="radio" name="Didn't care" value="Didn't care">Didn't care</li>
+        <li><input type="radio" name="Dissatisfied" value="Dissatisfied">Dissatisfied</li>
+        <li><input type="radio" name="Very Dissatisfied" value="Very Dissatisfied">Very Dissatisfied</li>
+    <li><label>Further Comments:</label></li><textarea name="Further Comments" id="comments" rows="5" cols="20" size="30"></textarea>
+    <li><label>Bio photo:</label><input type="file" name="file" accept="image/*"></li>
+    <li><label>Location visited:</label>
+        <select name="location" id="location" placeholder="Select location">
+            <option>Select Location</option>
+            <option>Canada</option>
+    </li>
+<li><button type="submit">submit</button></li>
+</ul>
+</fieldset>
+    </form>
+</body>
+</html>
