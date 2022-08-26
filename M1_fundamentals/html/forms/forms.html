@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>My feedback form</h1>
     <form>
         <fieldset>
-            <legend>My feedback form</legend>
+            <legend>Enter details below</legend>
         <ul>
-        <li label for="name">Name:</label></li><input type="text" name="First Name" placeholder="First Name" size="30" id="name" required>
+        <li><label for="name">Name:</label></li><input type="text" name="First Name" placeholder="First Name" size="30" id="name" required>
         <br>
-        <label>Email:</label><li><input type="email" name="email" placeholder="example@123.com" size="" required></li>
-        <label>Password:</label><li><input type="password" name="password" placeholder="Password"></li>
+        <li><label>Email:</label></li><input type="email" name="email" placeholder="example@123.com" size="" required>
+        <br>
+    <li><label>Password:</label></li><input type="password" name="password" placeholder="Password">
     <br>
-    <li><label>Tel:<label></label><input type="tel" name="mobile number" placeholder="416-555-5555" pattern="[0-9]{10}" required></li>
+    <li><label>Tel:<label></li><input type="tel" name="mobile number" placeholder="416-555-5555" pattern="[0-9]{10}" required>
     <b>
         <br>
     <li>Please check all the emotions that apply to you:</li>
@@ -32,14 +34,17 @@
         <li><input type="radio" name="Dissatisfied" value="Dissatisfied">Dissatisfied</li>
         <li><input type="radio" name="Very Dissatisfied" value="Very Dissatisfied">Very Dissatisfied</li>
     <li><label>Further Comments:</label></li><textarea name="Further Comments" id="comments" rows="5" cols="20" size="30"></textarea>
-    <li><label>Bio photo:</label><input type="file" name="file" accept="image/*"></li>
-    <li><label>Location visited:</label>
+    <li><label>Bio photo:</label><input type=text name="file"><input type="file" name="file" accept="image/*"></li>
+    <li><label>Location visited:</label></li>
         <select name="location" id="location" placeholder="Select location">
             <option>Select Location</option>
-            <option>Canada</option>
-    </li>
-<li><button type="submit">submit</button></li>
-</ul>
+            <option>Toronto</option>
+            <option>Brampton</option>
+            <option>Oshawa</option>
+            <option>Whitby</option>
+            <option>Mississauga</option>
+            <br>
+        <li><input type="submit"></li>
 </fieldset>
     </form>
 </body>
