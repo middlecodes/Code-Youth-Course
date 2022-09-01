@@ -26,6 +26,8 @@ label{
     width: 70%;
     margin: auto;
     border-radius: 1%;
+    margin-bottom: 2%;
+    margin-top: 4%;
 }
 .div2{
     width: 10%;
@@ -34,7 +36,9 @@ label{
     border-radius: 50%;
     text-align: center;
     padding: 20px;
-    background-color: #006666;
+    background-color: #025757;
+    position: absolute;
+    left: 26%;
 }
 .div3{
     width: 10%;
@@ -43,7 +47,10 @@ label{
     border-radius: 50%;
     text-align: center;
     padding: 20px;
-    background-color: #006666;
+    background-color: #025757;
+    position: absolute;
+    left: 42%;
+    overflow: auto;
 }
 .div4{
     width: 10%;
@@ -52,21 +59,49 @@ label{
     border-radius: 50%;
     text-align: center;
     padding: 20px;
-    background-color: #006666;
+    background-color: #025757;
+    position: absolute;
+    left: 60%;
 }
 .div5{
     width: 23%;
     border: 1pt;
     border-style: solid;
+    border: hidden;
     text-align: center;
     padding: 8px;
     background-color: #003333;
     color: white;
     font-size: 17pt;
-    border-radius: 4%;
-    float: right;
+    border-radius: 3%;
     margin-bottom: 10%;
+    display: inline-block;
+    position: absolute;
+    left: 65%;
+    top: 85%;
+    z-index: 3;
 }
 body{
-    background-image: linear-gradient(to bottom right, green, white, yellow);
+    background-image: linear-gradient(to right, green, white, yellow);
+}
+.box{
+    border: 1px;
+    border-style: solid;
+    border-color: #1bc66d;
+    background-color: #1bc66d;
+    width: 100%;
+    padding: 60px;
+    position: absolute;
+    top: 90%;
+}
+/*
+.free{
+    list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1pt;
+    border-style: solid;
+    position: absolute;
+    bottom: 89%;
 }
