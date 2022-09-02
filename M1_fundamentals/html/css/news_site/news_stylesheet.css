@@ -30,7 +30,7 @@ nav ul li{
 
 }
 a.active, a:hover{
-    background-color: white;
+    background-color: grey;
 
 }
 .div2, .div3, .div4{
@@ -68,4 +68,7 @@ display: inline-block;
 }
 #img2{
     float: right;
+}
+a{
+    color: white;
 }
