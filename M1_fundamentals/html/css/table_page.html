@@ -7,13 +7,15 @@
     <title>Table Page</title>
     <style>
         table{
-            width: 50%;
+            width: 40%;
         }
         table, th, td{
             border: 1pt;
             border-style: solid;
             border-color:black;
-            padding: 15px;
+            padding: 5px;
+            border-collapse: collapse;
+            
         }
          .rec1, .rec2, .rec3, .rec4{
             background-color: lightblue;
@@ -26,9 +28,13 @@
          #dog{
             float: right;
          }
-         tr::pseudo-element{
-            property: value;
-        }
+         .last2{
+            color: rgb(35, 135, 224)
+         }
+         .top2{
+            color: rgb(43, 43, 187);
+         }
+
     </style>
 </head>
 <body>
@@ -47,12 +53,12 @@
                 </tr>
             <th colspan="3">For Credit</th>
             <tr>
-                <td>6.813</td>
-                <td>User Interface Design</td>
-                <td>Spring 2014</td>
+               <td class="top2"><b>6.813</b></td></b> 
+                <td style="color: rgb(35, 135, 224);">User Interface Design</td>
+                <td style="color: rgb(35, 135, 224);">Spring 2014</td>
             </tr>
             <tr>
-                <td>6.034</td>
+               <td class="top2"><b>6.034</b></td>
                 <td>Artificial Intelligence</td>
                 <td>Fall 2013</td>
             </tr>
@@ -60,18 +66,18 @@
                 <th colspan="3">Listener</th>
             </tr>
             <tr>
-                <td>6.867</td>
+               <td class="last2"><b>6.867</b></td>
                 <td>Machine Learning</td>
                 <td>Fall 2013</td>
             </tr>
             <tr>
-                <td>6.830</td>
+                <td class="last2"><b>6.830</b></td>
                 <td>Database Systems</td>
                 <td>Fall 2012</td>
             </tr>
         </table>
         <div class="rec3"><h1>Interest</h1></div>
-        <p>I'm interested HCI, memes, and YouTube videos</p>
+        <p>I'm interested <span style="font-family:impact;">HCI</span>, memes, and YouTube videos</p>
         <div class="rec4"><h1>Submit Pet Information</h1></div>
         <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
        <ul style="list-style: none;">
