@@ -1,0 +1,107 @@
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.9em;
+}
+
+ul li{
+    list-style: none;
+}
+
+.list1{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+position: relative;
+top: 11px;
+}
+
+.list2{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+position: relative;
+bottom: 20px;
+}
+
+a{
+    color: black;
+    margin-right: 2%;
+    text-decoration: none;
+}
+
+ a:hover{
+    text-decoration: underline;
+}
+
+#sign-in{
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 8%;
+    padding: 9px;
+    border-radius: 3px;
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    right: 10px;
+    font-size: 15px;
+}
+   
+#apps:hover{
+    background: rgb(233, 233, 233);
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 20%;
+}
+.search-bar-container{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1pt;
+    border-style: solid;
+    border-color: gainsboro;
+    border-radius: 20px;
+    margin-top: -2%;
+}
+.search-bar-container >input{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    
+}
+.search-bar-container:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.buttons{
+    margin-top: 10%;
+    padding: 12px;
+    border-radius: 2%;
+    border: none;
+}
+footer{
+    margin-top: 70px;
+    border: 1pt solid rgb(246, 241, 241);
+    background-color: rgb(219, 219, 219);
+}
+nav ul li{
+    color: #454547;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 190px;
+}
