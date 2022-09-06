@@ -24,13 +24,13 @@ position: relative;
 bottom: 20px;
 }
 
-a{
+ a{
     color: black;
     margin-right: 2%;
     text-decoration: none;
 }
-
- a:hover{
+    
+    a:hover{
     text-decoration: underline;
 }
 
