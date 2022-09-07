@@ -18,6 +18,9 @@
         
         ul li{
             display: inline-block;
+            margin-left: 1%;
+            background-color: black;
+            padding: 1%;
         }
 
         .logo{
@@ -25,8 +28,8 @@
             color: rgb(0, 0, 0);
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
         }
-            .active, a:hover{
-                background-color: #f7d364
+            a:active, a:hover{
+                background-color: #f7d364;
             }
 
             a{
@@ -60,14 +63,39 @@
 }
         .cat{
             position: absolute;
-            bottom: 180px;
+            bottom: 100px;
             right: 20px;
             border: 3px;
-            border-style:dotted;
+            border-style:solid;
             border-color: green;
-            border-radius: 50px;
+            border-radius: 60px;
+            animation-name: kitty;
+            animation-duration: 5s;
+            animation-direction: reverse;  
         }
 
+        @keyframes kitty{
+         0%   {border-color:red; right:0px; top:0px;}
+         25%  {border-color:yellow; right:200px; top:0px;}
+         50%  {border-color:orange; right:200px; top:200px;}
+         75%  {border-color:blue; right:0px; top:200px;}
+         100% {border-color:green; right:0px; top:-200px;}
+        }
+    
+        .signup{
+            position: relative;
+            bottom: 200px;
+        }
+        input{
+            height: 30px;
+            width: 150px;
+        }
+        input:hover{
+            background-color: #daefba;
+        }
+        footer{
+            margin-top: -4%;
+        }
     </style>
 </head>
 <body>
@@ -80,14 +108,20 @@
         </ul>
     </nav>
     <section>
-        <em><div class="column1"><p>7 R’s of sustainable packaging:</p></em>
+        <div class="column1">
+           <em><p>The 7 R’s of sustainable packaging:</p></em>
             <p>Remove, Reduce, Reuse, Recycle, Renew, Revenue, and Read.</p>
-            <P>With S&M Eco friendly packaging, you wont need to worry about breaking your core values! You can get our affordable, cheap, and environmentally friendly packaging.</P>
-            <h1>Your packaging, your values, your way.</h1>
+            <P>With S&S Eco friendly packaging, you wont need to worry about breaking your core values! You can get our affordable, cheap, and environmentally friendly packaging.</P>
+            <h2 style="color: #f7d364;">Your packaging, your values, <em>your</em> way.</h2>
         </div>
-        <img class="cat" width="25%" src="/M1_fundamentals/landing_page/landing page images/unknown.png" alt="cat in a box">
-        <div class="column2">Main</div>
+        <img class="cat" width="20%" src="/M1_fundamentals/landing_page/landing page images/unknown.png" alt="cat in a box">
+        <div class="column2"></div>
     </section>
+    <form>
+    <p class="signup" style="font-family: Impact">Sign up for our Newsletter</p>
+    <label for="email" class="signup" > Enter Your Email Here: </label><input class="signup" type="email" name="email" id="email" placeholder="ilovecats!@abc123.com" required>
+    <input class="signup" type="submit">
+</form>
 <footer>
     <ul>
         <li class="active"><a href="#">Contact Us</a></li>
