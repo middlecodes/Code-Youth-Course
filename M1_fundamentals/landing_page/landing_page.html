@@ -28,6 +28,11 @@
             color: rgb(0, 0, 0);
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
         }
+
+        #boxes{
+            display: flex;
+            flex-direction: row;
+        }
             a:active, a:hover{
                 background-color: #f7d364;
             }
@@ -75,11 +80,11 @@
         }
 
         @keyframes kitty{
-         0%   {border-color:red; right:0px; top:0px;}
-         25%  {border-color:yellow; right:200px; top:0px;}
-         50%  {border-color:orange; right:200px; top:200px;}
-         75%  {border-color:blue; right:0px; top:200px;}
-         100% {border-color:green; right:0px; top:-200px;}
+         0%   {border-color:red; right:0px; bottom:0px;}
+         25%  {border-color:yellow; right:150px; bottom:0px;}
+         50%  {border-color:orange; right:150px; bottom:140px;}
+         75%  {border-color:blue; right:0px; bottom:140px;}
+         100% {border-color:green; right:0px; bottom:0px;}
         }
     
         .signup{
@@ -100,7 +105,7 @@
 </head>
 <body>
     <nav>
-        <ul><label class="logo">S&S Eco Packaging</label>
+       <ul> <img id="boxes" width="7%" height="7%" src="/M1_fundamentals/landing_page/stackedbox-econflex-transparent-bg-83086619e0f8958c74dcafc85efa0137.png" alt="stacked-boxes"><label class="logo">S&S Eco Packaging</label>
             <li class="active"><a href="#">About us</a></li>
             <li><a href="#">Quote</a></li>
             <li><a href="#">Donate</a></li>
