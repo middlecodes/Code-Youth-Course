@@ -30,8 +30,7 @@
         }
 
         #boxes{
-            display: flex;
-            flex-direction: row;
+            position: relative;
         }
             a:active, a:hover{
                 background-color: #f7d364;
@@ -57,7 +56,7 @@
         .column2{
             width: 100%;
             background-color: #fbefcc;
-            height: 200px;
+            height: 230px;
             display: inline-flex;
 
         }
@@ -68,25 +67,25 @@
 }
         .cat{
             position: absolute;
-            bottom: 100px;
-            right: 20px;
-            border: 3px;
+            bottom: 90px;
+            right: 30px;
+            border: 4px;
             border-style:solid;
-            border-color: #f7d364;
-            border-radius: 60px;
+            border-color: green;
+            border-radius: 100px;
             animation-name: kitty;
             animation-duration: 5s;
             animation-direction: reverse;  
         }
 
         @keyframes kitty{
-         0%   {border-color:red; right:0px; bottom:0px;}
-         25%  {border-color:yellow; right:150px; bottom:0px;}
-         50%  {border-color:orange; right:150px; bottom:140px;}
-         75%  {border-color:blue; right:0px; bottom:140px;}
-         100% {border-color:#f7d364; right:0px; bottom:0px;}
+         0%   {border-color:black; right:0px; bottom:0px;}
+         25%  {border-color:rgb(36, 174, 36); right:150px; bottom:0px;}
+         50%  {border-color:black; right:150px; bottom:140px;}
+         75%  {border-color: rgb(36, 174, 36); right:0px; bottom:140px;}
+         100% {border-color:black; right:0px; bottom:0px;}
         }
-    
+      
         .signup{
             position: relative;
             bottom: 200px;
@@ -99,13 +98,13 @@
             background-color: #daefba;
         }
         footer{
-            margin-top: -4%;
+            margin-top: -7%;
         }
     </style>
 </head>
 <body>
     <nav>
-       <ul> <img id="boxes" width="7%" height="7%" src="/M1_fundamentals/landing_page/landing page images/stackedbox-econflex-transparent-bg-83086619e0f8958c74dcafc85efa0137.png" alt="stacked-boxes"><label class="logo">S&S Eco Packaging</label>
+       <ul> <img id="boxes" width="6%" height="6%" src="/M1_fundamentals/landing_page/landing page images/stackedbox-econflex-transparent-bg-83086619e0f8958c74dcafc85efa0137.png" alt="stacked-boxes"><label class="logo">S&S Eco Packaging</label>
             <li class="active"><a href="#">About us</a></li>
             <li><a href="#">Quote</a></li>
             <li><a href="#">Donate</a></li>
@@ -119,7 +118,7 @@
             <P>With S&S Eco friendly packaging, you wont need to worry about breaking your core values! You can get our affordable, cheap, and environmentally friendly packaging.</P>
             <h2 style="color: #f7d364;">Your packaging, your values, <em>your</em> way.</h2>
         </div>
-        <img class="cat" width="20%" src="/M1_fundamentals/landing_page/landing page images/unknown.png" alt="cat in a box">
+        <img class="cat" height="250px" width="19%" src="/M1_fundamentals/landing_page/landing page images/unknown.png" alt="cat in a box">
         <div class="column2"></div>
     </section>
     <form>
