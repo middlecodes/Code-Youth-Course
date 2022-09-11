@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const num1 = parseInt(prompt("enter a number"));
+    const string=prompt("enter a math symbol");
+    const num2 = parseInt(prompt("enter ANOTHER number"));
+    
+    if(string=="+"){
+        console.log(num1 + num2);
+    }
+    if(string==("-")){
+        console.log(num1 - num2);
+    }
+    if(string==("/")){
+        console.log(num1 / num2)
+    }
+    if(string==("*")){
+        console.log(num1 * num2)
+    }
+    if(string==("/") && num2==0){
+        alert("Error, cannot divide by 0.");
+    }
+    </script>
+      <!-- bonus* if the user tries to divide by zero, stop them and console.log or alert an error -->
+</body>
+</html>
