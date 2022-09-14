@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <script>
+        const year = prompt("Enter year: ");
+    
+        if(year % 100 && year % 400 == 0){
+            alert(+year+ " is a leap year!");
+        }
+
+        else if(year % 100 == 0){
+        }
+
+        else if(year % 4 == 0){
+        alert(+year+ " is a leap year!");
+
+        }
+        else{
+            alert(+year+ " is not a leap year!");
+        }
+//if a year is divisible by 4 and not divisible by 100, then we are sure that it is a leap year. if a year is divisible by 100, we are not sure if it is a leap year yet; we need to test if it is divisible by 400.  If it is divisible by 400, then, it is a leap year, otherwise, it is not.
+    </script>
+</body>
+</html>
