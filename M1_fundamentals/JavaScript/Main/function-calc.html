@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Calculator</title>
+</head>
+<body>
+  <script>
+   function calculate(add){
+    return a+b;
+   }
+   function calculate(sub){
+    return a-b;
+   }
+   function calculate(mult){
+    return a*b;
+   }
+   function calculate(sub){
+    return a/b;
+   }
+
+   let a=parseInt(prompt("Enter a number"));
+   let operator=prompt("Enter a symbol");
+   let b=parseInt(prompt("Enter another number"));
+
+   if (operator=="+"){
+   alert(a+b);
+   }
+
+   else if (operator=="-"){
+   alert(a+b);
+   }
+
+   else if (operator=="*"){
+   alert(a*b);
+   }
+
+   else if (operator=="/"){
+   alert(a/b);
+   }
+
+   else{
+   alert("Invalid operator");
+   }
+  </script>  
+  
+</body>
+</html>
+
+
+
+<!-- Question 5: 
+Write a function that has three parameters(a, b, operator)
+Call the appropriate function depending on the operator. ex: call add() if the operator is "+"        -->
