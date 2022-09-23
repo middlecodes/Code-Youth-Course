@@ -64,35 +64,62 @@
 
 // Question 7: Create any object and then nest another object inside it
 
-let icecream = {
-    opt1: {
-    flavour1 : "chocolate",
-    flavour2 :  "vanilla",
-    flavour3 : "swirl swirl",
-    },
-    opt2: {
-        flavour1: "cookies n cream",
-        flavour2: "butter pecan",
-        flavour3: "pistachio",
-    },
-};
-console.log(icecream)
+// let icecream = {
+//     opt1: {
+//     flavour1 : "chocolate",
+//     flavour2 :  "vanilla",
+//     flavour3 : "swirl swirl",
+//     },
+//     opt2: {
+//         flavour1: "cookies n cream",
+//         flavour2: "butter pecan",
+//         flavour3: "pistachio",
+//     },
+// };
+// console.log(icecream)
 
 // Question 8: Create an object named 'workPlace' and then nest 3 objects inside with the names 'employee1', 'employee2' etc. 
 // and in each employee object, create the keys: name, id, hireDate (fill whatever value you want inside these)
 
-let workPlace = {
+// let workPlace = {
 
-    employee1: {
-    name: "Rob",
-    id: 289812,
-    hireDate: (new Date())
+//     employee1: {
+//     name: "Rob",
+//     id: 289812,
+//     hireDate: (new Date())
+//     },
+
+//     employee2: {
+//         name: "Sally",
+//         id: 272681,
+//         hireDate: (new Date(2022,9,02))
+//     }
+// }
+//     console.log(workPlace)
+
+let students = {
+    info: {
+    iD : 365, 
+    name: "Stewie", 
+    phoneNumber: "4163333333",
+    emailAddress: "stewingstew@gmail.com",
+    marks: 84,
     },
 
-    employee2: {
-        name: "Sally",
-        id: 272681,
-        hireDate: (new Date(2022,9,02))
-    }
+    address: {
+    city: "Toronto",
+    country: "Canada",
 }
-    console.log(workPlace)
+};
+console.log(students)
+// added 
+students.info.qualifications=true,
+students.address.streetNumber=15;
+console.log(students)
+// deleted
+delete students.info.iD;
+delete students.address.country;
+console.log(students)
+
+ 
+
