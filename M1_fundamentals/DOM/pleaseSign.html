@@ -1,0 +1,53 @@
+<!-- 3.
+Recreate the following html using DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginDiv">
+        <form action="get">
+            <p>Please Sign in</p>
+            <input type="text" placeholder="username" id="user">
+            <input type="password" placeholder="password" id="pass">
+            <button>Submit</button>
+            </form>
+    </div>
+    <script>
+        let div = document.createElement("div")
+        document.body.appendChild(div)
+
+        let para = document.createElement("p")
+        para.innerText = "Please Sign in"
+        div.appendChild(para)
+
+
+        let form = document.createElement("FORM")
+        let input = document.createElement("INPUT");
+        let input2 = document.createElement("INPUT");
+
+            input.setAttribute("type", "text");
+            input.placeholder = "username"
+
+            input2.setAttribute("type", "password");
+            input2.placeholder = "password"
+
+
+            form.appendChild(input);
+            form.appendChild(input2);
+
+            let button = document.createElement("button")
+            button.innerText = "submit"
+            document.body.appendChild(button)
+
+            div.appendChild(form)
+            div.appendChild(button)
+
+    </script>
+</body>
+</html>
+   
