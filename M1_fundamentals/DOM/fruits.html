@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<body>
+    <h1 id="head1">Fruits</h1>
+    <p>Buy delicious fruit!</p>
+    <ul>
+        <li class="redf">apple</li>
+        <li class="greenf">kiwi</li>
+        <li id="yell">banana</li>
+        <li id="orang">orange</li>
+        <li class="redf">strawberry</li>
+        <li class="redf">pomegranate</li>
+        <li class="greenf">grapes</li>
+    </ul>
+    <button onclick="change()">Click Me!</button>
+<script>
+        function change(){
+        let red = document.querySelectorAll(".redf");
+        for(let i = 0; i < red.length; i++){
+            red[i].style.color="red";
+        }
+
+        let green = document.querySelectorAll(".greenf");
+        for(let i = 0; i < green.length; i++){
+            green[i].style.color="green";
+        }
+
+        let yellow = document.getElementById("yell");
+        yellow.style.color="yellow";
+
+        let orange = document.getElementById("orang");
+        orange.style.color="orange";
+
+        let heading = document.getElementById("head1");
+        heading.innerHTML="List of Fruits";
+    }
+</script>
+
+</body>
+</html>
+
+<!-- Fruits
+
+
+// 1. click of a button, color of fruit changes to that color
+// 2. Initially heading is Fruits...click of a button, chnage it to List of Fruits
+// red
+// green
+// purple --> 
