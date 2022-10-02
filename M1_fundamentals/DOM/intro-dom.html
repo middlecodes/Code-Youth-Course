@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Dom Practice</title>
+</head>
+<body>
+    <h1 id="head">Trifecta</h1>
+    <p id="para1">Organized</p>
+    <p id="para2">Violence</p>
+    <script>
+        let heading = document.getElementById("head");
+        heading.style.color="red";
+        console.log(heading)
+
+        let p1 = document.getElementById("para1");
+        p1.style.color="blue";
+        console.log(p1)
+
+        let p2 = document.getElementById("para2");
+        p2.style.color="green";
+        console.log(p2)
+
+        let text = document.getElementsByTagName("p")
+        text[0].style.backgroundColor="yellow"
+        text[1].style.backgroundColor="purple"
+        console.log(text)
+    </script>
+</body>
+</html>
+<!-- one heading(Red) and 2 paragraphs(blue, green)  using Javascript DOM -->
