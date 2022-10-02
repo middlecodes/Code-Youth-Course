@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selectors</title>
+</head>
+<body>
+    <hi id="heading">Cat vs. Dog</hi>
+    <p class="text">Garfield 1</p>
+    <p class="text">Paco 0</p>
+    <script>
+        let head = document.getElementById("heading")
+        head.style.color="red"
+        // Query Selector
+        // let select = document.querySelector("p");
+
+        // Query Selector All
+        // let select = document.querySelectorAll("p");
+        // select[0].style.color="blue";
+        // select[1].style.color="blue";
+
+        // Using For Loop
+        // let select = document.querySelectorAll("p");
+        // for(let i = 0; i < select.length; i++){
+        //     select[i].style.color="blue"
+        // }
+        let select = document.querySelectorAll(".text");
+        for(let i = 0; i < select.length; i++){
+            select[i].style.color="blue";
+        }
+    </script>
+</body>
+</html>
