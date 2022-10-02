@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+</head>
+<body>
+    <script>
+    //  Question 1: Create a p tag using DOM, add some text in it, then append it to the body
+        let para = document.createElement("p")
+        para.innerText = "This is my paragraph. He contains a lot of words."
+        document.body.appendChild(para)
+
+
+
+    // Question 2: Create a div tag using DOM and append it to the body. Then create p tag also 
+    // using DOM, add text into it, then append it into the div you just created
+        
+    let div = document.createElement("div")
+    div.innerText = "[My div]"
+    document.body.appendChild(div)
+
+    let para2 = document.createElement("p")
+    para2.innerText = "Let's add some text"
+    document.querySelector("div").appendChild(para2)
+
+
+
+    // <!-- Question 3: Create a ul tag using DOM and append it to body. Create 3 li 
+    // tags using DOM, add text in them, then append them into the ul -->
+    let ul = document.createElement("ul")
+    ul.innerText = "My List"
+    document.body.appendChild(ul)
+
+    let li = document.createElement("li")
+    li.innerText = "Item 1"
+
+    let li2 = document.createElement("li")
+    li2.innerText = "Item 2"
+
+    let li3 = document.createElement("li")
+    li3.innerText = "Item 3"
+
+    document.querySelector("ul").appendChild(li)
+    document.querySelector("ul").appendChild(li2)
+    document.querySelector("ul").appendChild(li3)
+    </script>
+</body>
+</html>
