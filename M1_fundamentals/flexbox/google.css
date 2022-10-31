@@ -47,6 +47,7 @@ bottom: 20px;
     bottom: 5px;
     right: 10px;
     font-size: 15px;
+    cursor: pointer;
 }
    
 #apps:hover{
@@ -72,7 +73,7 @@ section{
     border-style: solid;
     border-color: gainsboro;
     border-radius: 20px;
-    margin-top: -2%;
+    margin-top: -20%;
 }
 .search-bar-container >input{
     flex-grow: 1;
@@ -89,9 +90,11 @@ section{
     padding: 12px;
     border-radius: 2%;
     border: none;
+    cursor: pointer;
 }
 footer{
     margin-top: 70px;
+    margin-bottom: -2px;
     border: 1pt solid rgb(246, 241, 241);
     background-color: rgb(219, 219, 219);
 }
@@ -103,5 +106,5 @@ nav ul li{
     display: block;
     margin: auto;
     position: relative;
-    top: 190px;
+    top: 2px;
 }

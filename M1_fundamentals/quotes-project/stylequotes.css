@@ -1,0 +1,74 @@
+body{
+    background-color: pink;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+/* CONTAINER */
+section{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(pink,white, pink);
+    align-items: center;
+}
+
+h1{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* BUTTON */
+
+#btn{
+    text-align: center;
+    background-color: white; 
+}
+
+button{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: 1pt solid black;
+    border-radius: 50px;
+}
+
+
+button:hover{
+    background-color: pink;
+}
+
+
+/* QUOTES */
+.quotes{
+width: 800px;
+height: 400px;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 50px;
+color: white;
+background: black;
+border: 10px solid white;
+transition: .5s;
+box-shadow: 5px 10px black;
+
+}
+
+.quotes p{
+    font-size: 24px;
+}
+
+.quotes h3{
+    font-size: 24px;
+}
+
+@media(max-width:480px){
+    .quotes p, .quotes h3{
+        font-size: 16px;
+    }
+}

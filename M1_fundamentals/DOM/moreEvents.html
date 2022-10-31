@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 4.
+        In HTML:
+        Create three(3) p tags with the text 'First', 'Second', 'Third'
+        Give all three the same class
+
+        In JavaScript:
+        -Using .addEventListener() add a click event listener
+        -console.log('Hello') using a call back function
+
+        !Don't comment this out after your done, you'll need it for the next question
+
+        5.
+        Find a way to console.log() the specific element you are clicking on using the one event listener
+
+        !If you need help, google first, then ask for help -->
+
+        <p class="same">First</p>
+        <p class="same">Second</p>
+        <p class="same">Third</p>
+
+        <script>
+            let pz = document.getElementsByClassName(".same")
+            pz[0].addEventListener("click", myFunction)
+            pz[1].addEventListener("click", myFunction2)
+            pz[2].addEventListener("click", myFunction3)
+
+            function myFunction(){
+                console.log("Hello");
+            }
+            function myFunction2(){
+                console.log("Second");
+            }
+            function myFunction3(){
+                console.log("Third");
+            }
+
+        </script>
+</body>
+</html>

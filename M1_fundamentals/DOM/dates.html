@@ -1,0 +1,51 @@
+<!-- 1.
+In HTML:
+Create an h1 element
+set its text to be "Check Date"
+add an onclick function to it
+
+In Javascript:
+in the function change the text to the date
+!hint new Date()
+
+
+2.
+In HTML:
+create an <ol> tag
+
+In JavaScript:
+Create 3 li's and append them to the ol tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appending with Dates</title>
+</head>
+<body>
+    <h1 id="head">Check Date</h1>
+    <button onclick="change()">Shiny Button</button>
+
+    <ol>Let's get presents!!!</ol>
+
+    <script>
+        function change(){
+            let heading = document.getElementById("head")
+            heading.innerHTML = new Date ("October 17, 2022")
+        
+        let item1 = document.createElement("li")
+        item1.innerText = "What"
+        let item2 = document.createElement("li")
+        item2.innerText = "Do"
+        let item3 = document.createElement("li")
+        item3.innerText = "You want!!!!"
+
+        document.querySelector("ol").appendChild(item1)
+        document.querySelector("ol").appendChild(item2)
+        document.querySelector("ol").appendChild(item3)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">Heading 1</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <button onclick="change()">Click Me!</button>
+<script>
+    function change(){
+        let heading = document.getElementsById("head1");
+        heading.style.color="red";
+        let paras = document.querySelectorAll("p");
+        for(let i = 0; i <paras.length; i++){
+            paras[i].style.color="blue";
+        }
+    }
+</script>
+
+</body>
+</html>

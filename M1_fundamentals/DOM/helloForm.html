@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let div = document.createElement("div")
+        document.body.appendChild(div)
+        let h1 = document.createElement("h1")
+        h1.innerText = "Hello, Shaneen"
+
+
+         let form = document.createElement("FORM")
+         let input = document.createElement("INPUT");
+       
+ 
+         input.setAttribute("type", "username");
+         input.placeholder = "username"
+         document.body.appendChild(form)
+         form.appendChild(input);
+
+         
+         let button = document.createElement("button")
+         button.innerText = "CLICK"
+         document.body.appendChild(button)
+         button.EventListener("click", myFunction);
+
+            function myFunction (){
+            div.appendChild("h1")
+         };
+
+        //  button.addEventListener("click",()=> document.getElementById("div").innerHTML = "Hello, Shaneen")
+ 
+
+
+    </script>
+</body>
+</html>
+
+<!-- 
+// Username: input form field 
+// click -addeventlistener
+// display you name like Hello "Bob" on the screen (not alert) in an empty div -->

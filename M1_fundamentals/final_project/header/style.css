@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    tex
+}
+
+nav{
+    height: 20vh;
+    background-color: black;
+    
+}
+
+nav li a{
+    display: flex;
+    justify-content: space-between;
+}

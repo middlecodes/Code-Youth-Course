@@ -1,0 +1,63 @@
+<!-- 4.
+    in HTML:
+    -Create an h1 tag that says MY LIST
+    -Create a list with 5 items    
+
+    in JavaScript:
+    -change the background-color of the h1 to red
+    -change the color of all list items to purple
+
+    5.
+    in HTML:
+    -Create a div with a class called parent and put a div inside it with a class called child
+
+    in JavaScript:
+    -Set the parent div to have a width of 100px and height of 100px give it a 3px border
+    -Set the child div to have a width of 50px and height of 50px give it a 1px border
+  
+    6.
+    in HTML:
+    -Create a div with 3 div inside it
+    -give the parent div the id container
+    -give the child divs the class box 
+
+    in JavaScript:
+    -Make the parent div have a width of 400px
+    -make the child divs a width of 5px and a height of 50px
+    -give the child divs margin: 25px 0px;
+    -change each child div to have a diffrent background-color -->
+
+    <!DOCTYPE html>
+<head>
+    <title>Shaneen & Ky Part 2</title>
+</head>
+<body>
+    <h1 id="heading">My List</h1>
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bananas</li>
+        <li>Bread</li>
+        <li>Coconut Water</li>
+    </ul>
+    <script>
+     let head = document.getElementsByTagName("h1")
+     head[0].style.backgroundColor="red"
+
+     let list = document.querySelectorAll("li")
+     for(let i = 0; i < list.length; i++){
+            list[i].style.color="purple";
+     }
+
+     let parent = document.querySelector(".parent")
+     parent.style.width="100px"
+     parent.style.height="50px"
+
+    </script>
+
+    <div class="parent">My Parent Div
+        <div class="child">My Child Div</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+       <tbody>
+        <tr>
+            <th>title</th> <th>author</th><th>published</th>
+        </tr>
+    </tbody>
+    </table>
+
+    <script>
+         fetch("books.json")
+    .then(response => response.json())
+    .then(resp => {
+
+        // for (let i in resp){
+        //     let tr = document.createElement('tr');
+
+            for (let g in resp[i]){
+                let td = document.createElement("td");
+                td.innerHTML = res[i][g]
+                tr.appendChild(td)
+            }
+        }       document.getElementsByTagName("tbody")[0].appendChild(tr)
+    })
+    </script>
+</body>
+</html>

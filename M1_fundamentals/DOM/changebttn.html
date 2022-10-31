@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- change button styles-background black, text white and space around text -->
+    <script>
+        let bttn = document.createElement("button")
+        bttn.innerText = "BIG Button"
+        document.body.appendChild(bttn)
+        bttn.onclick=function(){
+            document.querySelector("button").style.backgroundColor = "black"
+            document.querySelector("button").style.color = "white"
+            document.querySelector("button").style.padding = "100px"
+
+        }
+
+
+     
+    </script>
+</body>
+</html>
